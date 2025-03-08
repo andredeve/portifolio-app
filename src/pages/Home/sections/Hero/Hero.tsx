@@ -4,6 +4,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+import { BackHand } from "@mui/icons-material";
 
 const Hero = () => {
 
@@ -11,11 +12,17 @@ const Hero = () => {
         backgroundColor: theme.palette.primary.main,
         height: "101vh",
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
+        [theme.breakpoints.up('xs')]:{  //>=mobile
+            paddingTop: "150px"
+        },
+        [theme.breakpoints.up('md')]:{
+            paddingTop: "0px"
+        }
     }))
 
     const StyledAvatar = styled("img")(({theme})=>({
-        width: "100%",
+        width: "75%",
         borderRadius: "50%",
         border: `1px solid ${theme.palette.primary.contrastText}`
     }))
