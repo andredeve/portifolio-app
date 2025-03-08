@@ -1,10 +1,9 @@
-import { Box, Button, Container, Grid, styled, Typography } from "@mui/material"
+import { Box, Container, Grid, styled, Typography } from "@mui/material"
 import Avatar from "./../../../../assets/images/perfil.jpg";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
-import { BackHand } from "@mui/icons-material";
 
 const Hero = () => {
 
